@@ -68,7 +68,7 @@ ul, ol {
 
 
 /*---НАВІГАЦІЯ---*/
-.navigation { 
+.portfolio-navigation { 
  border-bottom: 1px solid #ECECEC;
 }
 
@@ -203,7 +203,7 @@ opacity: 1;
 .contact-unit {
   color: var(--maintxt-color);
   display: flex;
-  justify-items: baseline;
+  justify-items: center;
   }
 
 .link:hover,
@@ -468,7 +468,7 @@ padding-top: 94px;}
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill:#AFB1B8;
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
   }
   .clients-icons {    width: 106px;
     height: 60px;
@@ -479,7 +479,7 @@ padding-top: 94px;}
   .clients-link:focus {
     fill:var(--link-color);
     border: 1px solid #2196F3;
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
  }
  .clients-icons:hover,
  .clients-icons:focus {
@@ -660,7 +660,7 @@ margin-bottom: 20px;
   letter-spacing: 0.03em;
 
   transition: background-color 250ms var(--timing-function),
-  color 250ms var(--timing-function);
+  color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-button .item + .item {
@@ -679,7 +679,7 @@ margin-bottom: 20px;
   color: var(--lighttxt-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: background-color 250ms var(--timing-function),
+  transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function),
   color 250ms var(--timing-function);
 }
 
@@ -692,7 +692,8 @@ margin-bottom: 20px;
   border-left: 1px solid #eeeeee; 
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  padding: 20px 24px;}
+  padding: 20px 24px;
+  transition: box-shadow 250ms var(--timing-function);}
 
 .projects .title,
 .projects p {
@@ -726,6 +727,7 @@ margin-bottom: 20px;
 .projects .project-site:hover,
 .projects .project-site:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .project-site{
@@ -781,6 +783,8 @@ margin-bottom: 20px;
   justify-content: center;
   align-items: center;
   background: transparent;
+  fill: var(--logoblack);
+  cursor: pointer;
  }
 
  .close-icon:hover,
